@@ -1,6 +1,7 @@
 using BigHeadAPI.Model;
 using BigHeadAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace BigHeadAPI.Controllers;
 
@@ -17,11 +18,11 @@ public class StravaController: ControllerBase
 
         
     [HttpGet]
-    public string GetStrava()
+    public IActionResult GetStrava()
     {   
         Console.WriteLine("Get Get Get WL");
         System.Diagnostics.Debug.WriteLine("Get Get Get diag");
-        return "Strava Get";
+        return Ok(JsonConvert.SerializeObject("Strava Get Request"));
     }
         
         
