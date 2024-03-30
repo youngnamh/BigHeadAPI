@@ -1,0 +1,12 @@
+{
+  "profile": "",
+  "region": "",
+  "configuration": "Release",
+  "function-runtime": "dotnet8",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "BigHeadAPI",
+  "function-name": "bigheadapi",
+  "environment-variables": "ASPNETCORE_ENVIRONMENT=Development",
+  "function-url-enable": true
+}
