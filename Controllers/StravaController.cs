@@ -21,7 +21,6 @@ public class StravaController: ControllerBase
     public IActionResult GetStrava()
     {   
         Console.WriteLine("Get Get Get WL");
-        System.Diagnostics.Debug.WriteLine("Get Get Get diag");
         return Ok(JsonConvert.SerializeObject("Strava Get Request"));
     }
         
@@ -32,11 +31,8 @@ public class StravaController: ControllerBase
     {
         var code = stravaAuth.Code;
         Console.WriteLine($"code: {code} WL");
-        System.Diagnostics.Debug.WriteLine($"code {code} diag");
         string response = await _stravaAuthService.GetStravaToken(code);
-        Console.WriteLine("after");
-        System.Diagnostics.Debug.WriteLine("after");
-        return Ok(response);
+        return Ok(JsonConvert.SerializeObject(response));
     }
         
     [HttpPut("{id}")]
