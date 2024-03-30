@@ -40,3 +40,4 @@
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/obj/Release/net8.0/linux-x64/BigHeadAPI.genruntimeconfig.cache
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/obj/Release/net8.0/linux-x64/ref/BigHeadAPI.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/linux-x64/aws-lambda-tools-defaults.json
+/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/obj/Release/net8.0/linux-x64/BigHeadAPI.sourcelink.json
