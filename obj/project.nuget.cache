@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T+uFu2biqI1B1W93IKmSl3J9Gx+qMcvOS2sGLT6ao/upzJcdphFeSVjYv5x5ngdtz/1SNXsZXYQgRCxivVO4zQ==",
+  "dgSpecHash": "Q4wF7KqNKjZm23z2AxrmfV9KQ+U4833nb0z5nE3+VXcgqbRGv8njXLL/TP68/F8Yx6fT4v3xHlzb0N6cmYdyFQ==",
   "success": true,
   "projectFilePath": "/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/BigHeadAPI.csproj",
   "expectedPackageFiles": [
@@ -29,7 +29,8 @@
     "/Users/bobjones/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512",
-    "/Users/bobjones/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    "/Users/bobjones/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.0/system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "/Users/bobjones/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.0-rc.2.23479.6/microsoft.netcore.app.host.linux-x64.8.0.0-rc.2.23479.6.nupkg.sha512"
   ],
   "logs": []
 }

@@ -16,6 +16,7 @@
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
+/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Newtonsoft.Json.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.Swagger.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
