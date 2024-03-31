@@ -24,15 +24,6 @@ public class StravaController: ControllerBase
     {
         return "getStrava no id";
     }
-
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetStravaAthlete(int id)
-    {   
-        Console.WriteLine("Get Get Get WL");
-        var athlete = await _context.LoadAsync<Athlete>(id);
-        if (athlete == null) return NotFound();
-        return Ok(athlete);
-    }
         
         
         
@@ -43,17 +34,8 @@ public class StravaController: ControllerBase
         Athlete response = await _stravaAuthService.GetStravaToken(code);
         string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(response);
         
-        var athlete = await _context.LoadAsync<Athlete>(response.id);
-        //athlete already exists, update athletes
-        if (athlete != null)
-        {
-            return Ok(JsonConvert.SerializeObject(jsonAthlete));
-        }
-        else
-        {
-            await _context.SaveAsync(response);
-            return Ok(JsonConvert.SerializeObject(jsonAthlete));
-        }
+        await _context.SaveAsync(response);
+        return Ok(JsonConvert.SerializeObject(jsonAthlete));
     }
         
     [HttpPut("{id}")]
