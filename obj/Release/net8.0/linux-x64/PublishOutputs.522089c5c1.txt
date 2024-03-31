@@ -14,6 +14,9 @@
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Amazon.Lambda.Logging.AspNetCore.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Amazon.Lambda.RuntimeSupport.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Amazon.Lambda.Serialization.SystemTextJson.dll
+/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/AWSSDK.Core.dll
+/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/AWSSDK.DynamoDBv2.dll
+/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/AWSSDK.Extensions.NETCore.Setup.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Microsoft.AspNetCore.OpenApi.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Microsoft.OpenApi.dll
 /Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/bin/Release/net8.0/publish/Newtonsoft.Json.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q4wF7KqNKjZm23z2AxrmfV9KQ+U4833nb0z5nE3+VXcgqbRGv8njXLL/TP68/F8Yx6fT4v3xHlzb0N6cmYdyFQ==",
+  "dgSpecHash": "4WzfQ0D1Z//NFMDW7Aip5ajDr2j9MW6lxCbCO7Eph0qi2/FkiywtugCsG/ysm/O64w7eMRkYXgf8K+aRxM5v/g==",
   "success": true,
   "projectFilePath": "/Users/bobjones/Desktop/dev/dotnet/BigHeadAPI/BigHeadAPI/BigHeadAPI.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,9 @@
     "/Users/bobjones/.nuget/packages/amazon.lambda.logging.aspnetcore/3.1.0/amazon.lambda.logging.aspnetcore.3.1.0.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/amazon.lambda.runtimesupport/1.10.0/amazon.lambda.runtimesupport.1.10.0.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/amazon.lambda.serialization.systemtextjson/2.4.1/amazon.lambda.serialization.systemtextjson.2.4.1.nupkg.sha512",
+    "/Users/bobjones/.nuget/packages/awssdk.core/3.7.303.5/awssdk.core.3.7.303.5.nupkg.sha512",
+    "/Users/bobjones/.nuget/packages/awssdk.dynamodbv2/3.7.302.6/awssdk.dynamodbv2.3.7.302.6.nupkg.sha512",
+    "/Users/bobjones/.nuget/packages/awssdk.extensions.netcore.setup/3.7.300/awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0-rc.2.23480.2/microsoft.aspnetcore.openapi.8.0.0-rc.2.23480.2.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/bobjones/.nuget/packages/microsoft.extensions.configuration/2.1.0/microsoft.extensions.configuration.2.1.0.nupkg.sha512",
