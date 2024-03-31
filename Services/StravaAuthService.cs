@@ -19,7 +19,7 @@ namespace BigHeadAPI.Services
             _httpClient.BaseAddress = new Uri("https://www.strava.com/");
         }
         
-        public async Task<String> GetStravaToken(string aCode)
+        public async Task<Athlete> GetStravaToken(string aCode)
         {
             Console.WriteLine($"GetStravaToken: {aCode}");
             string accessToken = aCode; // You would need to obtain this from Strava
@@ -63,13 +63,15 @@ namespace BigHeadAPI.Services
                 List<Activity> activities = await GetActivities(tokenResponse.access_token);
                 responseAthlete.Activities = activities;
                 responseAthlete.ListLength = activities.Count;
-                string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(responseAthlete);
-                return jsonAthlete;
+                //string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(responseAthlete);
+                return responseAthlete;
             }
             else
             {
                 // Handle errors
-                return $"Error from Strava Service: {response.StatusCode}";
+                Athlete nullAthlete = null;
+                //return $"Error from Strava Service: {response.StatusCode}";
+                return nullAthlete;
             }
         }
 
@@ -80,7 +82,7 @@ namespace BigHeadAPI.Services
             _httpClient.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
 
             // Make Get Request fir activities
-            HttpResponseMessage response = await _httpClient.GetAsync("https://www.strava.com/api/v3/athlete/activities?page=1&per_page=75");
+            HttpResponseMessage response = await _httpClient.GetAsync("https://www.strava.com/api/v3/athlete/activities?page=1&per_page=200");
             if (response.IsSuccessStatusCode)
             {
                 // Read and return the response content

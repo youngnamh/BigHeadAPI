@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigHeadAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b1fe03b00b6054a41b25aec6dd6d369d409276d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2be573aa133e97ef4589d98ca2dfcb5503588ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigHeadAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigHeadAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

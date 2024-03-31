@@ -1,17 +1,20 @@
 using System.ComponentModel.DataAnnotations;
+using Amazon.DynamoDBv2.DataModel;
 using BigHeadAPI.Model.Validations;
 
 namespace BigHeadAPI.Model;
 
+[DynamoDBTable("shirts")]
 public class Shirt
 {
+    [DynamoDBHashKey("shirtId")]   
     public int ShirtId { get; set; }
-    [Required]
+    [DynamoDBProperty("brand")]
     public string? Brand { get; set; }
-    [Required]
+    [DynamoDBProperty("color")]
     public string? Color { get; set; }
+    [DynamoDBProperty("price")]
     public double? Price { get; set; }
-    [Required]
-    [Shirt_EnsureCorrectSizing]
+    [DynamoDBProperty("size")]
     public int? Size { get; set; }
 }
