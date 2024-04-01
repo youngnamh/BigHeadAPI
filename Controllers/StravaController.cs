@@ -32,9 +32,19 @@ public class StravaController: ControllerBase
     {
         var code = stravaAuth.Code;
         Athlete response = await _stravaAuthService.GetStravaToken(code);
-        string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(response);
-        
+        if (response.id == 99)
+        {
+            return BadRequest("Error, athlete not found.");
+        }
+        var athleteWithGroups = await _context.LoadAsync<Athlete>(response.id);
+        if (athleteWithGroups != null)
+        {
+            response.Groups = athleteWithGroups.Groups;
+            response.Friends = athleteWithGroups.Friends;
+        }
         await _context.SaveAsync(response);
+        
+        string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(response);
         return Ok(JsonConvert.SerializeObject(jsonAthlete));
     }
         

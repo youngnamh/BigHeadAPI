@@ -1,5 +1,6 @@
 using Amazon.DynamoDBv2.DataModel;
 using BigHeadAPI.Model;
+using BigHeadAPI.Model.Requests;
 using BigHeadAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -41,5 +42,35 @@ public class AthleteController: ControllerBase
             return Ok(JsonConvert.SerializeObject(jsonAthlete));
         }
     }
+    
+    // Add a new groupId to the athletes groups
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateAthlete([FromBody]UpdateAthleteRequest request, int id)
+    {
+        var athlete = await _context.LoadAsync<Athlete>(id);
+        //athlete already exists, update athletes
+        if (athlete == null)
+        {
+            return BadRequest($"Athlete with Id {id} doesn't exists.");
+        }
+        else
+        {
+            if (request.Groups != null)
+            {
+                //string groupId = newGroup.GroupId;
+                athlete.addGroups(request.Groups);
+            }
+
+            if (request.Friends != null){}
+            {
+                athlete.addFriends(request.Friends);
+
+            }
+            await _context.SaveAsync(athlete);
+            string jsonAthlete = System.Text.Json.JsonSerializer.Serialize(athlete);
+            return Ok(JsonConvert.SerializeObject(jsonAthlete));
+        }
+    }
+    
 
 }

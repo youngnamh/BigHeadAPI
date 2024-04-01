@@ -17,7 +17,44 @@ public class Athlete
     [DynamoDBProperty("refreshToken")]
     public string? RefreshToken { get; set; }
     [DynamoDBProperty("listLength")]
-    public int ListLength { get; set; }
+    public int? ListLength { get; set; }
     [DynamoDBProperty("activities")]
-    public List<Activity> Activities { get; set; }
+    public List<Activity>? Activities { get; set; }
+    [DynamoDBProperty("groups")]
+    public List<String>? Groups { get; set; }
+    [DynamoDBProperty("friends")]
+    public List<int>? Friends { get; set; }
+
+
+    public void addGroups(List<String> newGroups)
+    {
+        if (newGroups.Count==0)
+        {
+            return;
+        }
+        if (Groups == null || Groups.Count == 0)
+        {
+            Groups = newGroups;
+        }
+        else
+        {
+            Groups.AddRange(newGroups);
+        }
+    }
+    
+    public void addFriends(List<int> newFriends)
+    {
+        if (newFriends.Count==0)
+        {
+            return;
+        }
+        if (Friends == null || Friends.Count == 0)
+        {
+            Friends = newFriends;
+        }
+        else
+        {
+            Friends.AddRange(Friends);
+        }
+    }
 }

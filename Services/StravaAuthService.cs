@@ -69,7 +69,10 @@ namespace BigHeadAPI.Services
             else
             {
                 // Handle errors
-                Athlete nullAthlete = null;
+                Athlete nullAthlete = new Athlete
+                {
+                    id = 99
+                };
                 //return $"Error from Strava Service: {response.StatusCode}";
                 return nullAthlete;
             }
